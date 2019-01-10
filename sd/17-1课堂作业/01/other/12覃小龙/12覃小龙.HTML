@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   <style>
+
+.try{
+	width:100%;
+	height:312px;
+	background: #83ba8b;
+	padding-top: 70px;
+    
+}
+.try header{
+	width:555px;
+	height: 95px;
+	background: #f7f7f7;
+	border-radius: 48px;
+	margin:0 auto;
+	box-sizing:border-box;
+	padding:7px 0 0 35px;
+}
+.try p{
+	margin-top: 10px;
+	text-align: center;
+	color: #fff;
+}
+.try ul{
+	margin:50px auto 0;
+	width: 960px;list-style: none;
+}
+.try ul li{
+	width:291px;
+	height:251px;
+	float: left;
+	margin-right:4%;
+	margin-bottom: 10px;
+	position: relative;
+	-webkit-perspective:230px;	
+}
+.try ul li:last-child{
+	margin-right: 0;
+}
+.try ul li img{
+	position: absolute;
+	left:0;
+	top:0;
+	-webkit-backface-visibility:hidden;
+	transition:all 0.5s ease-in 0s;
+	border-radius: 60px;
+}
+.try ul li img.fan{
+ 	-webkit-transform:rotateX(-160deg);
+ }
+.try ul li:hover img.fan{
+ 	-webkit-transform:rotateX(0deg);
+ }
+ .try ul li:hover img.zheng{
+ 	-webkit-transform:rotateX(160deg);
+ } 
+ .qqq{
+	background-color: cornflowerblue;
+ }
+   
+   </style>
+</head>
+<body>
+    <div class="try">
+        <header>
+            <img src="tup/shizhuang.jpg" alt="">
+        </header>
+        <p>美化容貌 增添自信 突出个性 </p>
+        <ul>
+            <li class="qqq">
+                <img class="zheng" src="tup/try1.jpg" alt="">
+                <img class="fan" src="tup/try4.jpg" alt="">
+            </li>
+            <li class="qqq">
+                <img class="zheng" src="tup/try2.jpg" alt="">
+                <img class="fan" src="tup/try5.jpg" alt="">
+            </li>
+            <li class="qqq">
+                <img class="zheng" src="tup/try3.jpg" alt="">
+                <img class="fan" src="tup/try6.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>差不多</title>
+	<style>
+	body{
+		padding:200px;
+		color:chartreuse;
+
+	}
+	span{
+		font-size: 100px;
+		font-family: 微软雅黑;
+		position: relative;
+	}
+	span:before,span:after{
+		content:attr(data-q);
+		position: absolute;
+		left: 0;
+		top: 0;
+		transform-origin: left center;
+		transition:all 0.3s linear 0s;
+	}
+	span:before{
+		color:crimson;
+		z-index: 3;
+		transform:rotateY(15deg);
+	}
+	span:after{
+		color:rgba(0,0,0,0.3);
+		z-index:2;
+		transform: rotateY(0deg) scale(1.1, 1);
+	}
+	span:hover:before{
+		transform:rotateY(40deg) skew(0deg, 3deg);
+	}
+	span:hover:after{
+		transform:rotateY(40deg) skew(0deg,20deg);
+	}
+	</style>
+</head>
+<body>
+	<span data-q="真">真</span>
+	<br>
+	<span data-q="的">的</span>
+	<br>
+	<span data-q="好">好</span>
+	<br>
+	<span data-q="难">难</span>
+	<br>
+	<span data-q="哦">哦</span>
+	<br>
+	<span data-q="~">~</span>
+	
+	
+
+</body>
+</html>

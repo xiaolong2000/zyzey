@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style  type="text/css">
+    div,
+h2
+{
+    margin: 0;
+    padding: 0;
+}
+
+.mod
+{
+    
+    
+    height: 36px;
+    border-bottom: 2px solid #3983e5;
+    text-align: left;
+}
+
+.mod .title
+ {
+    font: 16px/26px "Microsoft YaHei", "SimHei", SimSun, Tahoma, Verdana, Arial, sans-serif;
+}
+
+.mod .title span
+{
+    position: relative;
+    bottom: -3px;
+    float: left;
+    height: 36px;
+    line-height: 30px;
+    color: #333;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.mod .title .current,
+.title span:hover 
+{
+     color: #3983e5;
+}
+
+.mod .title .current
+{
+    cursor: default;
+}
+
+.mod .title .current i 
+{
+     display: inline-block;
+}
+
+.mod .title i 
+{
+    position: absolute;
+    left: 50%;
+    margin-left: -6px;
+    bottom: 3px;
+    display: none;
+    border-bottom: 6px solid #3983e5;
+    border-top: 0 none;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+
+.mod .label
+{
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    display: inline-block;
+    background-color: orange;
+    color: #fff;
+    font-weight: normal;
+    padding: 0 2px;
+    font-size: 8px;
+    line-height: 16px;
+
+}
+
+.mod .triangle
+{
+    position: absolute;
+    z-index: 1;
+    top: 17px;
+    right: 0;
+    display: inline-block;
+    border-width: 3px;
+    border-style: solid;
+    border-color:orange transparent transparent orange;
+    
+}
+      
+        
+
+    </style>
+</head>
+<body>
+   
+        <div class="mod">
+                <h2 class="title">
+                    <span class="current">
+                        热门
+                        <i></i>
+                    </span>
+                    
+                    <span>
+                    主题游
+                    <i></i>
+                    <b class="label">
+                    <em>NEW</em>
+                    <em class="triangle"></em>
+                    </b>
+                    </span>
+                </h2>
+            </div>
+     
+</body> 
+</html>
